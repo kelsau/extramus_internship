@@ -1,0 +1,47 @@
+@font-face {
+    font-family: thedark;
+    src: url(../fonts/TheDark.ttf)
+}
+@font-face {
+    font-family: hard_rock;
+    src: url(../fonts/HARD_ROCK.ttf);
+}
+@font-face {
+    font-family: rockcrazy;
+    src: url(../fonts/rocknroll_typo_crazy.ttf);
+}
+
+nav,h1 {
+    font-family: thedark;
+}
+
+body{
+ 
+    background:linear-gradient(120deg,black 25%,red 25%,red 45%,black 45%, black 80%,red 80%);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+}
+ ul {
+    list-style: none;
+ }
+figure {
+
+width: 200px;
+height: 200px;
+}
+figcaption{
+    font-size: 1.2em!important;
+}
+#btn {
+    font-family: rockcrazy;
+}
+#inputname::placeholder, #inputfirstname::placeholder, #inputemail::placeholder, #message::placeholder {
+    font-family: hard_rock;
+    color: red;
+}
+.card {
+    width: 300px;
+}

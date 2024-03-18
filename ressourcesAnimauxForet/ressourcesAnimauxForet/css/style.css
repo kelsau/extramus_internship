@@ -1,0 +1,26 @@
+body {
+  max-width: 1500px;
+  background-image: url(/images/bg.jpg);
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  text-align: center;
+  color: rgb(132, 201, 28);
+}
+img {
+  width: 150px;
+ height: 150px;
+  filter: sepia(10);
+  margin: 10px;
+  border: solid white;
+}
+img:hover{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  filter: none;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}

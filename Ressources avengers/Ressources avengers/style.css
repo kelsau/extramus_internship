@@ -1,0 +1,56 @@
+    html {
+    max-width: 750px; 
+    margin-left: auto ; 
+    margin-right: auto;
+} 
+    header {
+    background-color: rgb(255, 228, 141);
+}
+    nav { 
+    float: right;
+    margin-top: 40px;
+    margin-right: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+    nav a { 
+    margin-right: 20px;
+    color: orange;
+    text-decoration: none;
+}
+    h2, nav, footer, button {
+    font-family: 'Oswald', sans-serif;
+}
+    h2 { 
+    font-size: 24px;
+    color: orange;
+}
+    p, ul {
+    font-size: 16px;
+    text-align: justify;
+}
+    #team, #dollars {
+         float: left; height: 150px; 
+         margin-right: 0.5cm;
+        }
+    footer { 
+        text-align: center;
+        color: gray;
+    }
+    button { 
+        float: right;
+        background-color: orange;
+        border: none;
+        height: 1cm;
+    }
+    button a {
+        color: white;
+        text-decoration: none;
+     }
+     div { 
+        background-color: white;
+     }
+  main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }

@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background-color: rgb(29, 145, 145);
+    margin: 0% 10%;
+
+}
+ul {
+    margin: 0 ;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+h1,h2,h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.4em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    font-size: 1.6em;
+    background-color:rgb(88, 47, 14);
+    margin: 0%;
+    padding: 10px 0;
+}
+#logo {
+    width: 40%;
+ }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px 17px;
+    
+
+}
+nav a:hover {
+    background-color: rgb(121, 79, 45) ;
+    
+}
+
+#chocolat {
+    border-radius: 10px;
+    width: 90%;
+}
+h2 {
+    background-color: rgb(88, 47, 14);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.inline {
+    display: inline;
+}
+section {
+
+    background-color: rgb(28, 133, 133);
+    width: 70%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: medium;
+}
+aside {
+    background-color: white;
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    text-align: justify;
+    font-size:medium;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 960px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        font-size: small;
+    }
+    section{
+        width: 100%;
+        font-size: small;
+    }
+    header{
+        width: 100%;
+    }
+    body {
+        margin: 0;
+    }
+    a {
+        font-size: 0.8em !important;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    aside{
+        display: none;
+    }
+   body {
+    margin: 0;
+   }
+   nav a{
+    display: flex;
+    flex-direction: column;
+   }
+}
