@@ -1,0 +1,279 @@
+* {
+     box-sizing: border-box;
+  }
+ body{
+     background-color: rgb(226, 225, 225);
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+
+    h3
+    {
+        font-family: 'Courgette', cursive;
+    }
+
+    
+  div.topbar
+  {
+     text-align: center;
+     background-color: black;
+     color: white;
+  }
+
+  header
+  {
+     background-color:rgb(246, 212, 245) ;
+     padding-bottom: 2%; 
+  }
+  #cart
+  {
+     padding-right: 10%;
+  }
+
+  nav{
+     display: flex;
+     justify-content: space-between;
+   
+    
+ }
+ #nav2 {
+     display: flex;
+     justify-content: space-around;
+ 
+ }
+
+ #sous{
+     text-transform: uppercase;
+     text-decoration: none;
+ }
+ 
+
+
+    
+
+ main{
+     padding: 8%;
+}
+
+main.contener{
+    
+     justify-items: center;
+     align-items: center;    
+}
+
+
+         /*1ER SECTION */
+
+
+
+
+ section#slider
+{ 
+     display: flex;
+   
+
+} 
+  #slider h2 { 
+     background-color: rgba(246, 212, 245, 0.8);
+     position: absolute;
+    
+     left:9% ;
+ }
+
+
+         /*2EME SECTION */
+
+
+
+
+section#select{
+    
+     background-color: white;
+
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+     justify-content: space-between;
+
+    
+   
+     text-align: center;
+
+     transition: opacity 0.2s ease;
+     border-color: white 2% ;
+}  
+
+#div3
+{
+     float: left;
+}
+
+
+h1{
+   
+     display: flex;
+   
+}
+
+
+  article.escarpin
+  {
+      margin: 3%;
+  }
+
+  article.escarpin:hover 
+  {
+     opacity: 0.5;
+  }
+  #select a:hover 
+  {
+     opacity: 1;
+     transition: opacity 0.2s ease;
+  }
+
+
+  #text
+  {
+   display: flex;
+   align-items: flex-end;
+   background-color: white;
+   justify-content: space-around;
+   margin-bottom: 2%;
+  }
+
+  #text1
+  {
+   background-color: white;
+   display: flex;
+   margin-top: 2%;
+  
+  }
+
+
+         /*3EME SECTION */
+
+
+   section#news{
+     
+   
+     display: flex;
+     text-align: center;
+     justify-content: space-between;
+     
+     
+   }
+
+   #new > h2{
+    background-color: rgb(236, 49, 236);
+   }
+   #best > h2{
+    background-color: rgb(120, 218, 64);
+   }
+   #crush > h2{
+    background-color: rgb(35, 129, 136);
+   }
+   #new{
+    
+    padding: 5%;
+    background-color: white;
+    
+   }
+  
+   #best{
+    padding: 5%;
+    background-color: white;
+    
+   }
+   #crush{
+    padding: 5%;
+    background-color: white;
+   
+   
+    
+   }
+  
+    
+
+  
+
+  
+  img {
+     max-width: 100%;
+ 
+  }
+  
+  a {
+     transition: ease 0.2s;
+  }
+  
+
+
+
+
+
+           /*FOOT*/
+
+
+
+  footer {
+    
+   
+     flex-direction: column; /* Pour aligner les sections verticalement sur les petits écrans */
+  }
+
+#info  {
+     padding: 2%;
+     background-color: rgb(221, 177, 220);
+     display: flex;
+     flex-direction: row;
+     transition: color 0.2s ease;
+     cursor: pointer;
+     flex-wrap: nowrap;
+     justify-content: space-evenly;
+     align-items: center;
+     transition: color 0.2s ease; /* Transition progressive */
+     cursor: pointer; /* Changement du curseur de la souris */
+  }
+
+  
+#bottombar {
+     text-align: center;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     flex-direction: row-reverse;
+     justify-content: space-around;
+     background-color:rgb(246, 212, 245) ;
+     flex-wrap: wrap; /* Pour gérer le retour à la ligne sur les petits écrans */
+  }
+
+  ul
+  {
+   list-style-type: none;
+  }
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 640px) 
+  {
+    /* Les règles CSS ici seront appliquées lorsque la résolution est inférieure à 640 pixels */
+    #header, #main, #footer {
+      flex-direction: column;
+    }
+  }
+
+
+
+  @media screen and (max-width: 640px) 
+  {
+    /* Les règles CSS ici seront appliquées lorsque la résolution est inférieure à 640 pixels */
+    .price, .cart {
+      display: none;
+    }
+  }

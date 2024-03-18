@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+</head>
+<body>
+    <header>
+        <img src="SiteDWWM/Images/logo.jpeg" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="Index.html">Accueil</a></li>
+                <li><a href="La_formation.html">La formation</a> </li>
+                <li><a href="Témoignages.html">Témoignages</a> </li>
+                <li><a href="Nos_références.html">Nos références</a> </li>
+                <li><a href="Nous_contacter.html">Nous contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Contactez-nous</h1>
+    <form action="https://www.enquetes.afpa.fr/#/login" target="_blank">
+        Prénom Nom <input type="text" name="name"> <br>
+        Votre adresse mail <input type="email" name="email" placeholder="monadresse@gmail.com"> <br>
+        Votre téléphone <input type="tel" name="phone_number" placeholder="06 07 08 09 10"> <br>
+        Vous êtes <br>
+            <input type="radio" name="situation">Demandeur d'emploi <br>
+            <input type="radio" name="situation">Salarié en transition pro <br>
+            <input type="radio" name="situation">Autre <br>
+        Vos modalités pédagogiques préférées <br>
+            <input type="radio" name="préférence">Formation en présentiel <br>
+            <input type="radio" name="préférence">100% Distance <br>
+            <input type="radio" name="préférence">Alternance <br>
+            <input type="radio" name="préférence">Pas de préférence <br>
+        Vous êtes résident de la région 
+        <select> 
+            <option value="Choisissez votre région">Choisissez votre région</option> 
+            <option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpe</option>
+            <option value="Bourgogne-Franche Co">Bourgogne-Franche Co</option>
+            <option value="Bretagne">Bretagne</option>
+        </select><br>
+        Votre message <textarea placeholder="Votre message" rows="10" cols="20"></textarea><br>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
