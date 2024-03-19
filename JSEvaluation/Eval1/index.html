@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js"Defer></script>
+    <title>Formulaire de Contact</title>
+    
+</head>
+<body>
+
+    <form id="contactForm" onsubmit="return validateForm()">
+        <h2>Contacter le Service Client</h2>
+
+        <label for="demande">Votre demande concerne:</label>
+        <select id="demande" name="demande" required>
+            <option value="option0">Information articles</option>
+            <option value="option1">Commande & paiement </option>
+            <option value="option2">Expédition & livraison</option>
+            <option value="option3">Retour,échange & remboursement</option>
+            <option value="option4">Code promo & Bon d'achat</option>
+            <option value="option5">Newsletters</option>
+            <option value="option6">Problème technique</option>
+            <option value="option7">Autres demandes</option>
+            <option value="option8">Protection des données personnelles</option>
+            <!-- Ajoutez les autres options ici -->
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label for="prenom">Votre prénom:</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="nom">Votre nom:</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Votre courriel:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="photo">Votre photo:</label>
+        <select id="photo" name="photo" onchange="updatePhoto()" required>
+            <option value="photos1/neutre.jpg">Sélectionnez une photo</option>
+            <option value="photos2/alain.jpg">alain.jpg</option>
+            <option value="photos3/albert.jpg">albert.jpg</option>
+            <option value="photos4/alfred.jpg">alfred.jpg</option>
+            <option value="photos5/alphonse.jpg">alphonse.jpg</option>
+            <option value="photos6/alphonsine.jpg">alphonsine.jpg</option>
+            <option value="photos7/berth.jpg">berth.jpg</option>
+            <option value="photos8/elisabeth.jpg">elisabeth.jpg</option>
+            <option value="photos9/gertrude.jpg">gertrude.jpg</option>
+            <option value="photos10/gilbert.jpg">gilbert.jpg</option>
+            <option value="photos11/gilberte.jpg">gilberte.jpg</option>
+            <option value="photos12/hugh.jpg">hugh.jpg</option>
+            <option value="photos13/jacques.jpg">jacques.jpg</option>
+            <option value="photos14/john.jpg">john.jpg</option>
+            <!-- Ajoutez les autres options ici -->
+        </select>
+        <img id="selectedPhoto" src="placeholder.jpg" alt="Photo sélectionnée">
+
+    
+    </form>
+
+    
+
+</body>
+</html>

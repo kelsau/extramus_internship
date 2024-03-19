@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez le service client</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"Defer></script>
+
+</head>
+<body>
+    <h1 class="titre">Contacter le service client</h1>
+    <form id="formulaire">
+        <div class="encadre">
+            <label for="demande">Votre demande</label>
+            <select id="demande" required>
+                <option value="option0">Information articles</option>
+                <option value="option1">Commande & paiement </option>
+                <option value="option2">Expédition & livraison</option>
+                <option value="option3">Retour,échange & remboursement</option>
+                <option value="option4">Code promo & Bon d'achat</option>
+                <option value="option5">Newsletters</option>
+                <option value="option6">Problème technique</option>
+                <option value="option7">Autres demandes</option>
+                <option value="option8">Protection des données personnelles</option>
+            </select>
+        </div>
+        <div class="encadre">
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+        </div>
+        <div class="encadre">
+            <label for="prenom">Votre prénom</label>
+            <input type="text" id="prenom" required>
+        </div>
+        <div class="encadre">
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" required>
+        </div>
+        <div class="encadre">
+            <label for="email">Votre courriel</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="encadre">
+            <label for="photo">Votre photo</label>
+            <select id="select" onchange="AfficheImage()">
+                <option value="photos/neutre.jpg">Sélectionnez une photo</option>
+                <option value="photos/alain.jpg">alain.jpg</option>
+                <option value="photos/albert.jpg">albert.jpg</option>
+                <option value="photos/alfred.jpg">alfred.jpg</option>
+                <option value="photos/alphonse.jpg">alphonse.jpg</option>
+                <option value="photos/alphonsine.jpg">alphonsine.jpg</option>
+                <option value="photos/berth.jpg">berth.jpg</option>
+                <option value="photos/elisabeth.jpg">elisabeth.jpg</option>
+                <option value="photos/gertrude.jpg">gertrude.jpg</option>
+                <option value="photos/gilbert.jpg">gilbert.jpg</option>
+                <option value="photos/gilberte.jpg">ton fils en slip</option>
+                <option value="photos/hugh.jpg">ton pere en slip</option>
+                <option value="photos/jacques.jpg">ta mere en slip</option>
+                <option value="photos/john.jpg">babayaga</option>
+            </select>
+            <img id="image" src="/photos/neutre.jpg" alt="Photo choisie">
+        </div>
+
+    </form>
+    
+</body>
+</html>
