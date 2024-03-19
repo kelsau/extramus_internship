@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Photocopie</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-6 mx-auto">
+                <form action="" method="get">
+                    <div class="mb-6">
+                        <label for="valeur-saisie" class="form-label">Combien de photocopies souhaitez-vous ?</label>
+                        <input type="number" class="form-control" id="valeur-saisie" aria-describedby="valeur-saisie">
+
+                        <div class="form-text">
+                            Rappel : Tarifs
+                            10cts les 10 premières
+                            0.9cts les 20 suivantes
+                            0.8cts les 30 suivantes...
+                        </div>
+
+                        <button type="submit" id="button" class="btn btn-primary mt-5">Tu me dois</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-sm-3 mx-auto">
+                <div id="Message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-T6wRjH73n9X4RTQ0lFLb4b45325yG4W0y5m79+L38+Pxn93pIGlWUE4P8l06346D7"
+            crossorigin="anonymous"></script>
+            <script src="/exo2.js"></script>
+</body>
+</html>

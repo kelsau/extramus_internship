@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Juste Prix</title>
+    <style>
+        body {
+            background-image: url('/OIP.jpg'); /* Remplacez 'background.jpg' par le chemin de votre image de fond */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #game-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        #item-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        #guess-input {
+            margin-top: 10px;
+        }
+
+        #guess-button {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <h2>Le Juste Prix</h2>
+    <p>Devinez le prix de l'objet pour remporter la partie !</p>
+    <img id="item-image" alt="Objet à deviner">
+    <p id="result"></p>
+    <input type="number" id="guess-input" placeholder="Votre estimation (entre 1 et 100)">
+    <button id="guess-button" onclick="soumettreEstimation()">Soumettre</button>
+
+    <script>
+        var objets = [
+            { nom: "Télévision", image: "tv.jpg" },
+            { nom: "Ordinateur portable", image: "laptop.jpg" },
+            { nom: "Smartphone", image: "phone.jpg" },
+            { nom: "Console de jeu", image: "console.jpg" },
+            { nom: "Montre connectée", image: "watch.jpg" }
+        ];
+
+        var objetChoisi;
+        var prixObjet;
+        var tentativesRestantes;
+
+        function initialiserJeu() {
+            objetChoisi = objets[Math.floor(Math.random() * objets.length)];
+            prixObjet = getRandomPrice(1, 100);
+            tentativesRestantes = 10;
+
+            document.getElementById('item-image').src = objetChoisi.image;
+            document.getElementById('result').innerText = '';
+            document.getElementById('guess-input').value = '';
+        }
+
+        function soumettreEstimation() {
+            var propositionUtilisateur = parseInt(document.getElementById('guess-input').value);
+
+            if (isNaN(propositionUtilisateur) || propositionUtilisateur < 1 || propositionUtilisateur > 100) {
+                alert("Veuillez entrer une estimation valide entre 1 et 100.");
+                return;
+            }
+
+            if (propositionUtilisateur === prixObjet) {
+                document.getElementById('result').innerText = "Félicitations ! Vous avez deviné le juste prix. Vous remportez " + objetChoisi.nom + " !";
+            } else {
+                tentativesRestantes--;
+
+                if (tentativesRestantes === 0) {
+                    document.getElementById('result').innerText = "Dommage ! Vous n'avez pas réussi à deviner le juste prix. L'objet était " + objetChoisi.nom + " et son prix était de " + prixObjet + " euros.";
+                } else {
+                    document.getElementById('result').innerText = "Désolé, ce n'est pas le bon prix. Il vous reste " + tentativesRestantes + " tentatives.";
+                }
+            }
+        }
+
+        function getRandomPrice(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        initialiserJeu();
+    </script>
+</div>
+
+</body>
+</html>
